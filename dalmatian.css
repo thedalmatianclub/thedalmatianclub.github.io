@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    height: 250vh;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.navmenu {
+    grid-area: 1 / 1 / 2 / 4;
+
+
+}
+
+.info { grid-area: 2 / 1 / 4 / 4; }
+
+/*The big Dalmatian club title */
+.title {
+    font-family: "Bell MT", serif;
+    background-image: url('images/dalmationprint.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 35%;
+    font-size: 8vh;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header img */
+.headerimg {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+}
+
+
+/* link color */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    padding: 20px 20px;
+    text-decoration: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.header li a:hover {
+    font-weight: bold;
+}
+
+.header .logo2 {
+    display: block;
+    float: right;
+    font-size: 2em;
+    padding: 10px;
+    text-decoration: none;
+    height: 3%;
+    width: 3%;
+}
+
+
+
+/* Tour dates styles */
+
+.tour-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-location {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+}
+
+.date, .location {
+    color: white;
+}
+
+
+.tour-heading {
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 18vh;
+}
+
+/* Images below tour dates */
+.logo {
+    margin-top: 35vh;
+}
+
+/* Goodbye Mercury image below tour dates */
+.specialLogo {
+    margin-top: 3vh;
+}
+
+/* Footer Section */
+#footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.footer-container a {
+    margin: 0 20px;
+}
+
+.footer-container img {
+    width: 40px;
+}
+
+/* navbar content */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+/* this is for having the title and hamburger menu on the top of page that scrolls with the user
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+
+/*Check out our latest singles h1 */
+.singles{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 35vh;
+    font-family: "Bell MT", serif;
+    background-image: url('images/dalmationprint.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 35%;
+    font-size: 8vh;
+
+}
+
+/* Tour h1 title */
+#title {
+    text-align: center;
+    margin: 0;
+}
+
+#hamburger-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+#menu-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+#hamburger-menu .bar {
+    height: 3px;
+    width: 26px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-content li {
+    margin-bottom: 8px;
+}
+
+#menu-content li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#menu-content li a:hover {
+    color: #0078d4;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-family: "Bell MT", serif;
+        background-image: url('images/dalmationprint.jpg');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 14%;
+        font-size: 3vh;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .singles {
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding-top: 35vh;
+        font-family: "Bell MT", serif;
+        background-image: url('images/dalmationprint.jpg');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 35%;
+        font-size: 3vh;
+    }
+
+    /* social media small logos at bottom of page */
+    .footerLogo {
+        align-items: center;
+        width: 6%;
+        height: 12%;
+        padding: 0 1vh 0 1vh;
+    }
+
+    .logo {
+        margin-top: 25vh;
+        width: 75%;
+    }
+
+    /* Goodbye Mercury image below tour dates */
+    .specialLogo {
+        margin-top: 3vh;
+        width: 75%;
+    }
+
+}
