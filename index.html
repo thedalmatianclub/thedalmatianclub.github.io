@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Dalmatian Club</title>
+    <img class="headerimg" src="images/dClub.jpg" alt="Band Picture">
+    <link rel="stylesheet" type="text/css" href="dalmatian.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hamburger-menu").click(function() {
+                $("#menu-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+
+    <h1 class="title">THE DALMATIAN CLUB</h1>
+    <div id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="menu-content">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dalmatianContact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="info">
+
+    <div class="tour-dates">
+        <h1 class="tour-heading">Tour</h1>
+        <div class="date-location">
+            <div class="date">MAY 5</div>
+            <div class="location">Los Angeles, CA</div>
+        </div>
+        <div class="date-location">
+            <div class="date">JUN 17</div>
+            <div class="location">San Francisco, CA</div>
+        </div>
+        <div class="date-location">
+            <div class="date">JUL 6</div>
+            <div class="location">Seattle, WA</div>
+        </div>
+    </div>
+
+    <table style="margin: 0 auto;">
+        <tr>
+            <td style="text-align: center;">
+                <h1 class="singles">Listen to Our Newest Singles!</h1>
+                <a class="goodbyeMerc"
+                   href="https://open.spotify.com/track/4wsinHTJfrigGIafofOK2i?si=16b50b0f29b5495f">
+                    <img src="images/gMerc.jpg" alt="Single Cover" class="specialLogo">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td style="text-align: center;">
+                <a class="sunnyT"
+                   href="https://open.spotify.com/track/5RnnTfkSaA6Ne1WtWzKyXe?si=74ac2d11429b4942">
+                    <img src="images/sunnyT.jpg" alt="Single Cover" class="logo">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td style="text-align: center;">
+                <a class="inbox"
+                   href="https://open.spotify.com/track/2hUgdJdB3P0FkbC8T5CSNz?si=3407269b2fdb42de">
+                    <img src="images/inbox.jpg" alt="Single Cover" class="logo">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+</main>
+<footer id="footer">
+    <div class="footer-container">
+        <a href="https://open.spotify.com/artist/6iBHqkZ4cEh71G0wNnkees?si=z3ItuQnHRpaoMNrSDeAwDw">
+            <img src="images/spotify.png" alt="logo">
+        </a>
+        <a href="https://www.instagram.com/thedalmatianclub/">
+            <img src="images/instagram.png" alt="logo">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
